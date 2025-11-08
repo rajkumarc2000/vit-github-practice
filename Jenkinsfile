@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/rajkumarc2000/vit-github-practice.git'
+                checkout scm
             }
         }
         stage('Hello2') {
