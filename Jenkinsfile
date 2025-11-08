@@ -5,6 +5,7 @@ pipeline {
         stage('Git clone') {
             steps {
                 checkout scm
+                echo 'Hello World1'
             }
         }
         stage('Hello2') {
