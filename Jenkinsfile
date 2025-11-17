@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Hello2') {
             steps {
-                echo 'Hello World2'
+                echo 'Hello World2 - in the feature branch'
                 sleep 5
             }
         }
