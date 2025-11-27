@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git clone') {
             steps {
-                checkout scm
+                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'git@github.com:rajkumarc2000/vit-github-practice.git']])
                 echo 'Hello World1'
             }
         }
